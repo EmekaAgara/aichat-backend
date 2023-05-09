@@ -25,7 +25,7 @@ export default async function handler(
 
     const completion = await openai.createCompletion({
         model: "text-davinci-003",
-        prompt: `act as my personal stylist and answer with a short sentence only.\n
+        prompt: `your name is Karah, act as my personal stylist and answer with a short sentence only.\n
                  Topic: ${prompt}\n`,
         max_tokens: 200,
         temperature: 0.8,
